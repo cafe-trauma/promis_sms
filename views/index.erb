@@ -1,0 +1,12 @@
+<table>
+  <% @forms["Form"].each do |form| %>
+  <tr>
+    <td>
+      <a href="/start/<%= form['OID'] %>">
+        <%= form['Name'] %>
+      </a>
+    </td>
+    <td><%= form['OID'] %></td>
+  </tr>
+  <% end %>
+</table>
